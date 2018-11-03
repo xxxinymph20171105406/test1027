@@ -55,8 +55,10 @@ class ViewController: UIViewController {
 
     @IBAction func bullonminuse(_ sender: Any) {
         temp = temp - Double(result.text!)!
-        result.text = "\(temp)"
+        let temp2 = -temp
+        result.text = "\(temp2)"
     }
+    
     
     @IBAction func result(_ sender: Any) {
         temp = temp + Double(result.text!)!
@@ -64,6 +66,7 @@ class ViewController: UIViewController {
     @IBAction func bullonAC(_ sender: Any) {
         result.text = " "
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
